@@ -506,7 +506,7 @@ impl AssuanServer {
         if use_std_socket {
             command.arg("--use-standard-socket");
         }
-        command.arg("--server");
+        command.arg("--daemon");
         command.arg("--no-detach");
         command.stdin(Stdio::piped());
         command.stdout(Stdio::piped());
